@@ -362,6 +362,8 @@ footer p {
 
     .MenuDesplegable {
         display: inline;
+        /* width: 650px;
+        height: 60px; */
     }
 }
 
@@ -371,6 +373,7 @@ footer p {
         grid-template-columns: 1fr;
         grid-template-rows: 60px auto 50px;
         gap: 0px 0px;
+        align-items: center;
         grid-template-areas:
             "header"
             "main"
@@ -395,7 +398,9 @@ footer p {
         font-size: smaller;
         margin-top: 10px
     }
-
+    .MenuDesplegable {
+        display: inline;
+    }
     main h1 {
         position: static;
     }
@@ -404,9 +409,15 @@ footer p {
         width: 250px;
         height: 250px;
     } */
+    .DatosContainer{
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 450px) {
+    .MenuDesplegable {
+        display: inline;
+    }
     .picture img {
         width: 250px;
         height: 250px;
