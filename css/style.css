@@ -11,7 +11,7 @@
 .GridContenedor {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 60px 60px auto 100px;
+    grid-template-rows: 60px 70px auto 100px;
     gap: 0px 0px;
     grid-template-areas:
         "header header"
@@ -35,6 +35,7 @@ header {
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 100;
     grid-area: header;
 }
 
@@ -42,8 +43,8 @@ header {
 
 .menu {
     position: sticky;
-    top: 50px;
-    height: 60px;
+    top: 60px;
+    height: 70px;
     grid-area: nav;
     display: flex;
     justify-content: space-evenly;
